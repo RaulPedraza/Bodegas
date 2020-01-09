@@ -19,8 +19,16 @@ Route::get('/', function () {
 Route::get('/bodegas', 'BodegaController@index');
 Route::get('/bodegas/create', 'BodegaController@create');
 Route::post('/bodegas', 'BodegaController@store');
+Route::get('/bodegas/edit/{id}', 'BodegaController@edit');
+Route::get('/bodegas/destroy/{id}', 'BodegaController@destroy');
 Route::get('/bodegas/{id}', 'BodegaController@show');
+Route::post('/bodegas/{id}', 'BodegasController@update');
 
 Route::get('/bodegas/{id}/create', 'VinoController@create');
 Route::post('/bodegas/{id}', 'VinoController@store');
-Route::get('/vinos/{id}', 'VinoController@show');
+Route::get('/bodegas/{idBodega}/vino/edit/{idVino}', 'VinoController@edit');
+Route::get('/bodegas/{idBodega}/vino/destroy/{idVino}', 'VinoController@destroy');
+Route::get('/bodegas/{idBodega}/vino/{idVino}', 'VinoController@show');
+Route::post('/bodegas/{idBodega}/vino/{idVino}', 'VinoController@update');
+
+

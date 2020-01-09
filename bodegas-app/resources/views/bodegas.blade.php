@@ -24,7 +24,7 @@
                 <td>{{ $bodega->direccion }}</td>
                 <td>{{ $bodega->telefono }}</td>
                 <td>{{ $bodega->email }}</td>
-                <td><a href="/bodegas/{{ $bodega->id }}" class="btn btn-outline-primary">Entrar</a><a href="" class="btn btn-outline-danger">Borrar</a></td>
+                <td><a href="/bodegas/{{ $bodega->id }}" class="btn btn-outline-primary">Entrar</a><a href="/bodegas/destroy/{{ $bodega->id }}" class="btn btn-outline-danger">Borrar</a></td>
             </tr>
         @endforeach
     </table>

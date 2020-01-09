@@ -4,7 +4,7 @@
     <div class="row">
         <div class=" offset-3 col-6 d-flex justify-content-between">
             <h2>Nueva Bodega</h2>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Volver</a>
+            <a class="btn btn-info btn-lg" href="/bodegas" role="button">Volver</a>
         </div>
 
     </div>
@@ -39,30 +39,30 @@
                 <label for="informacion">Informacion</label>
                 <textarea class="form-control" id="informacion" name="informacion" rows="3"></textarea>
             </div>
-            <div>
+            <div class="form-group">
                 <h4>¿Dispone de restaurante?</h4>
                 <div>
-                    <input type="radio" id="si" name="restaurante" value="si">
+                    <input type="radio" id="si" name="restaurante" value="1">
                     <label for="si">Si</label>
                 </div>
                 <div>
-                    <input type="radio" id="no" name="restaurante" value="no">
+                    <input type="radio" id="no" name="restaurante" value="0" checked>
                     <label for="no">No</label>
                 </div>
             </div>
             <div>
                 <h4>¿Dispone de hotel?</h4>
                 <div>
-                    <input type="radio" id="si" name="hotel" value="si">
+                    <input type="radio" id="si" name="hotel" value="1">
                     <label for="si">Si</label>
                 </div>
                 <div>
-                    <input type="radio" id="no" name="hotel" value="no">
+                    <input type="radio" id="no" name="hotel" value="0" checked>
                     <label for="no">No</label>
                 </div>
             </div>
             <div>
-                <input type="submit" value="Añadir">
+                <input type="submit" value="Añadir" class="btn btn-lg btn-primary">
             </div>
         </form>
     </div>

@@ -22,8 +22,8 @@ class CreateBodegasTable extends Migration
             $table->string('contacto');
             $table->string('añoFundacion');
             $table->string('informacion');
-            $table->string('restaurante');
-            $table->string('hotel');
+            $table->boolean('restaurante');
+            $table->boolean('hotel');
             $table->timestamps();
         });
     }

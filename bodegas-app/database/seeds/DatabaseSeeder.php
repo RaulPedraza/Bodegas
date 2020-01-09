@@ -23,9 +23,8 @@ class DatabaseSeeder extends Seeder
                 'contacto' => $faker->name('male'|'female'),
                 'añoFundacion' => $faker->year($max = 'now') ,
                 'informacion' => $faker->realText(50,2),
-                'restaurante' => 'Si',
-                'hotel' => 'No'
-
+                'restaurante'=>$faker->boolean,
+                'hotel'=>$faker->boolean
             ]);
         }
         /*for($i=0;$i<10;$i++){
