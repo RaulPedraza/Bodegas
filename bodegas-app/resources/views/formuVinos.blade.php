@@ -3,7 +3,7 @@
 @section('contenido')
     <div class="row">
         <div class="offset-3 col-6 d-flex justify-content-between">
-            <h2>Nueva Bodega</h2>
+            <h2>Nuevo Vino</h2>
             <a href="/bodegas/{{ $bodega->id }}" class="btn btn-outline-info">volver</a>
         </div>
     </div>

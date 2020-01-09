@@ -22,7 +22,7 @@ Route::post('/bodegas', 'BodegaController@store');
 Route::get('/bodegas/edit/{id}', 'BodegaController@edit');
 Route::get('/bodegas/destroy/{id}', 'BodegaController@destroy');
 Route::get('/bodegas/{id}', 'BodegaController@show');
-Route::post('/bodegas/{id}', 'BodegasController@update');
+Route::post('/bodegas/{id}', 'BodegaController@update');
 
 Route::get('/bodegas/{id}/create', 'VinoController@create');
 Route::post('/bodegas/{id}', 'VinoController@store');

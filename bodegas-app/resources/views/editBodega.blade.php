@@ -3,7 +3,7 @@
 @section('contenido')
     <div class="row">
         <div class=" offset-3 col-6 d-flex justify-content-between">
-            <h2>Nueva Bodega</h2>
+            <h2>Editar Bodega</h2>
             <a class="btn btn-info btn-lg" href="/bodegas/{{ $bodega->id }}" role="button">Volver</a>
         </div>
 
@@ -84,7 +84,7 @@
                 @endif
             </div>
             <div>
-                <input type="submit" value="Añadir" class="btn btn-lg btn-primary">
+                <input type="submit" value="Editar" class="btn btn-lg btn-primary">
             </div>
         </form>
     </div>

@@ -50,7 +50,7 @@ class BodegaController extends Controller
         return view('editBodega',['bodega' => $bodega]);
     }
 
-    public function update(Request $request,$idBodega, $id)
+    public function update(Request $request, $id)
     {
         $bodega = Bodega::find($id);
 
