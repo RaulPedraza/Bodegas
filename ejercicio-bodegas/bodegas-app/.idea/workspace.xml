@@ -108,7 +108,8 @@
   <component name="ProjectId" id="1W4yg1DwKj2aMgC39v60L71AM0h" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DIW" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -140,6 +141,8 @@
       <updated>1578423268604</updated>
       <workItem from="1578423269762" duration="615000" />
       <workItem from="1578505308459" duration="5703000" />
+      <workItem from="1578560430253" duration="963000" />
+      <workItem from="1578565881015" duration="8011000" />
     </task>
     <servers />
   </component>

@@ -9,7 +9,7 @@
 </head>
 <body>
 <h2>Nueva Bodega</h2>
-<p><a>volver</a></p>
+<p><a href="/bodegas/{id}">volver</a></p>
 <form action="/bodegas/{id}" method="POST">
     @csrf
     <div>
@@ -31,6 +31,9 @@
     <div>
         <label for="tipo">Tipo de vino</label>
         <input type="text" id="tipo" name="tipo">
+    </div>
+    <div>
+        <input type="text" id="bodega_id" name="bodega_id" value="{{ $bodega->id }}" hidden>
     </div>
     <div>
         <input type="submit" value="Añadir Vino">

@@ -13,7 +13,7 @@ class CreateVinosTable extends Migration
      */
     public function up()
     {
-        Schema::create('vino', function (Blueprint $table) {
+        Schema::create('vinos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->text('descripcion');
@@ -23,7 +23,7 @@ class CreateVinosTable extends Migration
             $table->unsignedBigInteger('bodega_id');
             $table->timestamps();
 
-            $table->foreign('bodega_id')->references('id')->on('bodega')->onDelete('cascade');
+            $table->foreign('bodega_id')->references('id')->on('bodegas')->onDelete('cascade');
         });
     }
 

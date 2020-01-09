@@ -20,3 +20,7 @@ Route::get('/bodegas', 'BodegaController@index');
 Route::get('/bodegas/create', 'BodegaController@create');
 Route::post('/bodegas', 'BodegaController@store');
 Route::get('/bodegas/{id}', 'BodegaController@show');
+
+Route::get('/bodegas/{id}/create', 'VinoController@create');
+Route::post('/bodegas/{id}', 'VinoController@store');
+Route::get('/vinos/{id}', 'VinoController@show');

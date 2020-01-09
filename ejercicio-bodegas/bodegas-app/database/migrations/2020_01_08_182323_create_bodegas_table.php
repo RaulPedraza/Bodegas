@@ -13,7 +13,7 @@ class CreateBodegasTable extends Migration
      */
     public function up()
     {
-        Schema::create('bodega', function (Blueprint $table) {
+        Schema::create('bodegas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->string('direccion');
